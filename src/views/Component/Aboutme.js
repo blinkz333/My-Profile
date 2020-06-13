@@ -22,6 +22,14 @@ function Aboutme() {
     const [iconPills, setIconPills] = React.useState("1");
     const [pills, setPills] = React.useState("1");
 
+    const redirectToResume = () => {
+      window.location.href = "https://drive.google.com/file/d/1wxdJjzDQCeyzWBFmeXrahmrwoMy3E7bL/view?usp=sharing"
+    }
+
+    const redirectToCV = () => {
+      window.location.href = "https://drive.google.com/file/d/1aPgi6lnPmWSbPfnJubBga2RoqrMB82z8/view?usp=sharing"
+    }
+
     const redirectToFacebook = () => {
         window.location.href = "https://www.facebook.com/blinkzrpn"
       }
@@ -56,9 +64,24 @@ function Aboutme() {
         <div className="section">
 <Container>
   <div className="button-container">
-    <Button className="btn-round" color="info" size="lg"  onClick={() => redirectToLinkedin()}>
-      Follow Linkedin
+    <Button className="btn-round" color="info" size="lg"  onClick={() => redirectToResume()}>
+      Download Resume
     </Button>
+    <Button className="btn-round" color="info" size="lg"  onClick={() => redirectToCV()}>
+      Download CV
+    </Button>
+    <Button
+      className="btn-round btn-icon"
+      color="default"
+      id="tooltip515203354"
+      size="lg"
+      onClick={() => redirectToLinkedin()}
+    >
+      <i className="fab fa-linkedin"></i>
+    </Button>
+    <UncontrolledTooltip delay={0} target="tooltip515203352">
+      Follow me on Linkedin
+    </UncontrolledTooltip>
     <Button
       className="btn-round btn-icon"
       color="default"
@@ -233,18 +256,19 @@ function Aboutme() {
   </h5>
   <h5 className="description">
       <h4>ICONEXT CO., LTD.<br/> October 2018 - December 2018</h4>
-      <p>• Frontend Mockup (ASH Project)</p>
+      <p>• Meeting Client and making Mockup. </p>
+      <p>• Make All Screen In Project.</p>
   </h5>
   <h5 className="description">
       <h4>J.S TECHNICAL SERVICES CO. LTD (ITONE CONSULTANT)<br/> December 2018 - August 2019</h4>
-      <p>• Make Screen from justinmind with SapUi5</p>
-      <p>• Connect ABAP backend with API</p>
-      <p>• CRUD Page </p>
+      <p>• Make screen from client requirement.</p>
+      <p>• Connect API from ABAP Backend with JSON API. </p>
+      <p>• Make create, update, delete function prepare for send data to Backend (SAP).</p>
   </h5>
   <h5 className="description">
-      <h4>Thairath<br/> September 2019 - Present</h4>
-      <p>• Event Web Application </p>
-      <p>• My Thairath Application</p>
+      <h4>Trend Vg3 Co., Ltd <br/> September 2019 - Present</h4>
+      <p>• Event Web Application.</p>
+      <p>• My Thairath Application.</p>
   </h5>
 </Container>
 </div>

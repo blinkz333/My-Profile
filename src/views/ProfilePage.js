@@ -16,8 +16,6 @@ function ProfilePage() {
       <div className="wrapper">
         <ProfilePageHeader />
         <AboutMe/>
-       
-        
         <DarkFooter />
       </div>
       
