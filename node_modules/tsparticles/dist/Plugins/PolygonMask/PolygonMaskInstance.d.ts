@@ -1,0 +1,51 @@
+import { Container } from "../../Core/Container";
+import type { ICoordinates } from "../../Core/Interfaces/ICoordinates";
+import { Particle } from "../../Core/Particle";
+import type { IDimension } from "../../Core/Interfaces/IDimension";
+import type { ISvgPath } from "./Interfaces/ISvgPath";
+import type { IContainerPlugin } from "../../Core/Interfaces/IContainerPlugin";
+import { IOptions } from "../../Options/Interfaces/IOptions";
+import { RecursivePartial } from "../../Types/RecursivePartial";
+import { IPolygonMask } from "./Options/Interfaces/IPolygonMask";
+import { PolygonMask } from "./Options/Classes/PolygonMask";
+declare type IPolygonMaskOptions = IOptions & {
+    polygon: IPolygonMask;
+};
+declare type PolygonMaskParticle = Particle & {
+    initialPosition?: ICoordinates;
+};
+export declare class PolygonMaskInstance implements IContainerPlugin {
+    redrawTimeout?: number;
+    raw?: ICoordinates[];
+    paths?: ISvgPath[];
+    dimension: IDimension;
+    offset?: ICoordinates;
+    readonly path2DSupported: boolean;
+    readonly options: PolygonMask;
+    private polygonMaskMoveRadius;
+    private readonly container;
+    constructor(container: Container);
+    private static polygonBounce;
+    private static drawPolygonMask;
+    private static drawPolygonMaskPath;
+    initAsync(options?: RecursivePartial<IPolygonMaskOptions>): Promise<void>;
+    checkInsidePolygon(position: ICoordinates | undefined): boolean;
+    resize(): void;
+    stop(): void;
+    randomPointInPolygon(): ICoordinates;
+    particlesInitialization(): boolean;
+    particlePosition(position?: ICoordinates, particle?: PolygonMaskParticle): ICoordinates | undefined;
+    particleBounce(particle: PolygonMaskParticle, _delta: number): boolean;
+    clickPositionValid(position: ICoordinates): boolean;
+    downloadSvgPathToPolygon(svgUrl?: string, force?: boolean): Promise<ICoordinates[] | undefined>;
+    parseSvgPathToPolygon(xml: string, force?: boolean): ICoordinates[] | undefined;
+    draw(context: CanvasRenderingContext2D): void;
+    drawPointsOnPolygonPath(): void;
+    private getRandomPointOnPolygonPath;
+    private getRandomPointOnPolygonPathByLength;
+    private getEquidistantPointOnPolygonPathByIndex;
+    private getPointOnPolygonPathByIndex;
+    private createPath2D;
+    private initRawData;
+}
+export {};

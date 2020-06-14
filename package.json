@@ -2,19 +2,26 @@
   "name": "My-Profile",
   "version": "1.0.0",
   "private": true,
-  "homepage" : "https://blinkz333.github.io/My-Profile/",
+  "homepage": "https://blinkz333.github.io/My-Profile/",
   "dependencies": {
     "gh-pages": "^3.0.0",
+    "install": "^0.13.0",
     "moment": "2.24.0",
     "node-sass": "4.12.0",
     "nouislider": "14.0.2",
     "react": "16.8.6",
+    "react-anime": "^3.0.3",
     "react-bootstrap-switch": "15.5.3",
     "react-datetime": "2.16.3",
     "react-dom": "16.8.6",
+    "react-native-collapsible": "^1.5.2",
+    "react-particle-effect-button": "^1.0.1",
+    "react-particles-js": "^3.2.1",
     "react-router": "5.0.1",
     "react-router-dom": "5.0.1",
     "react-scripts": "3.0.1",
+    "react-spring": "^8.0.27",
+    "react-typist": "^2.0.5",
     "reactstrap": "8.0.1"
   },
   "scripts": {
@@ -26,8 +33,8 @@
     "compile-sass": "node-sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css",
     "minify-sass": "node-sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --output-style compressed",
     "map-sass": "node-sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css --source-map true",
-    "predeploy":"yarn build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
