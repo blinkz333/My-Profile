@@ -29,11 +29,11 @@ function Aboutme() {
     });
 
     const redirectToResume = () => {
-      window.location.href = "https://drive.google.com/file/d/1wxdJjzDQCeyzWBFmeXrahmrwoMy3E7bL/view?usp=sharing"
+      window.location.href = "https://drive.google.com/file/d/1ZiPgW5isz9Gq6WZrcWVtRQJKTCFAIrzJ/view?usp=sharing"
     }
 
     const redirectToCV = () => {
-      window.location.href = "https://drive.google.com/file/d/1aPgi6lnPmWSbPfnJubBga2RoqrMB82z8/view?usp=sharing"
+      window.location.href = "https://drive.google.com/file/d/1DNy8Wc7RDvS5IzSvtVIqtv9_yyvGiXIV/view?usp=sharing"
     }
 
     const redirectToFacebook = () => {
