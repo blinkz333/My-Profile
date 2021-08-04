@@ -156,14 +156,14 @@ function Aboutme() {
       {
         title: 'Contact 📇',
         description:
-          'Email : threerapon.rat@cpc.ac.th Phone : (66) 83-994-3436',
+          'Email : threerapon.rat@gmail.co.th Phone : (66) 83-994-3436',
         image: '',
         imageRatio: 784 / 1016
       },
       {
         title: 'Address 🏠',
         description:
-          ' 92/92 -1 (1508) VV home , Prachasongkroh 23 , Din Dang , Bangkok , 10400',
+          ' 2/622 Lumpini Park Viphavadhi - Jatujak , Soi Viphavadhi 3 , Jompol , Bangkok , 10900',
         image: '',
         imageRatio: 839 / 1133
       },
@@ -289,6 +289,7 @@ function Aboutme() {
       <h5>Trend Vg3 CO., LTD <br/> September 2019 - Present</h5>
       <p>• Event Web Application.</p>
       <p>• My Thairath Application.</p>
+      <p>• Sport Pages Thairath.</p>
   </h5>
 </Container>
         </div>

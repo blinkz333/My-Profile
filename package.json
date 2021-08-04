@@ -21,6 +21,7 @@
     "react-router-dom": "5.0.1",
     "react-scripts": "3.0.1",
     "react-spring": "^8.0.27",
+    "react-tsparticles": "^1.33.2",
     "react-typist": "^2.0.5",
     "reactstrap": "8.0.1"
   },
@@ -35,9 +36,6 @@
     "map-sass": "node-sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css --source-map true",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
